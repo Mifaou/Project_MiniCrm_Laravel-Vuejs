@@ -10,7 +10,7 @@ Creation of an admin panel to manage companies .
 
 Basic Laravel Auth: possibility to connect as administrator .
 
-Use database seeds to create the first user with the email admin@admin.com and the password "password".
+Use database seeds to create the first user with the email test@test.com and the password "password".
 
 CRUD functionality for Companies and Employees : 
 * Create / Read / Update / Delete
