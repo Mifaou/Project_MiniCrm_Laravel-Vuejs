@@ -80,4 +80,17 @@ php artisan storage:link
  ```bash
 php artisan serve
 ```
+## DEMO
 
+![login](https://user-images.githubusercontent.com/34101451/114315067-c26fd380-9aec-11eb-9fbc-f5aa9e5cc9ac.jpg)
+
+![login1](https://user-images.githubusercontent.com/34101451/114315069-c4d22d80-9aec-11eb-8c56-ef25f0c8ce43.jpg)
+![dashboard](https://user-images.githubusercontent.com/34101451/114315071-c69bf100-9aec-11eb-9d41-6ccc81d12d01.jpg)
+![company_list](https://user-images.githubusercontent.com/34101451/114315072-c7cd1e00-9aec-11eb-8a6b-60a7d6cf6abc.jpg)
+![add_company](https://user-images.githubusercontent.com/34101451/114315076-c8fe4b00-9aec-11eb-999f-978ee49b8fb9.jpg)
+![add_company1](https://user-images.githubusercontent.com/34101451/114315079-ca2f7800-9aec-11eb-872b-75df2014ffe0.jpg)
+![company_list1](https://user-images.githubusercontent.com/34101451/114315081-cbf93b80-9aec-11eb-8adc-c14e41910259.jpg)
+![update company](https://user-images.githubusercontent.com/34101451/114315084-cdc2ff00-9aec-11eb-81a2-fc08dcf7f49d.jpg)
+![employeelist](https://user-images.githubusercontent.com/34101451/114315085-cef42c00-9aec-11eb-980e-4912d28c6e97.jpg)
+![employee_added](https://user-images.githubusercontent.com/34101451/114315087-d0bdef80-9aec-11eb-8152-afa4505522bf.jpg)
+![dash_updated](https://user-images.githubusercontent.com/34101451/114315090-d1ef1c80-9aec-11eb-9c2a-f584ae2bc631.jpg)
