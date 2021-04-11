@@ -1,62 +1,83 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Mini Crm Using Laravel and Vuejs
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Creation of an admin panel to manage companies .
 
-## About Laravel
+* Laravel version : 8
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+* Vuejs version : 4
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# Requirements
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Basic Laravel Auth: possibility to connect as administrator .
 
-## Learning Laravel
+Use database seeds to create the first user with the email admin@admin.com and the password "password".
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+CRUD functionality for Companies and Employees : 
+* Create / Read / Update / Delete
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+The company database table includes the following fields:
+* Name (required).
+* Email.
+* Logo (minimum 100 × 100).
+* Website.
 
-## Laravel Sponsors
+The employee database table includes the following fields: 
+* First name (required).
+* last name (required).
+* Company (foreign key to Companies).
+* Email.
+* Phone.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Use database migrations to create these diagrams above.
 
-### Premium Partners
+Store company logos in the storage / app / public folder and make them accessible to the public.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
+Use basic Laravel resource controllers with default methods - index, create, store, etc.
 
-## Contributing
+Use Laravel pagination to display the list of companies / employees, N entries per page
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Use Laravel make: auth as the default Bootstrap-based design theme, but remove the ability to subscribe.
 
-## Code of Conduct
+Make the project multilingual (using the resources / lang folder).
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Use Vuejs / Nuxtjs technology to create a front-end application by integrating the functionalities described below.
 
-## Security Vulnerabilities
+Basic tests with phpunit.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Installation
 
-## License
+1. Clone the repo with cmd : 
+```bash
+git clone https://github.com/Mifaou/Project_MiniCrm_Laravel-Vuejs.git
+```
+2. Change directory : 
+```bash
+ cd Project_MiniCrm_Laravel_Vuejs
+```
+3. Run this cms and set db credentials into .env file : 
+```bash
+cp .env.example .env
+```
+4. Install Composer : 
+```bash
+composer install
+```
+5. Generate new application key with : 
+ ```bash
+php artisan key:generate
+```
+6. Create DB on Mysql
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+7. Seeders
+ ```bash
+php artisan migrate --seed
+```
+8. The Public Disk
+ ```bash
+php artisan storage:link
+```
+9. Run Server : 
+ ```bash
+php artisan serve
+```
+
