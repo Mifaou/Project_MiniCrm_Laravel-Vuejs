@@ -9,29 +9,32 @@
     {{-- </ul> --}}
     <label class="sidebar-label mt-3">Companies</label>
         <li class="sidebar-nav-item">
+        <li class="sidebar-nav-item">
             <a href="{{route('admin.companies')}}" class="sidebar-nav-link {{setActive(['admin.companies','company_form'])}}"><i class="fa fa-building" aria-hidden="true"></i>
 &nbsp;&nbsp;All Companies</a>
+        <a href="{{route('admin.company_form')}}" class="sidebar-nav-link "><i class="fa fa-plus" aria-hidden="true"></i>
+
+&nbsp;&nbsp;Add Company</a>
+
+
+        </li>
+
 
 
         </li>
     </ul>
     <label class="sidebar-label mt-3">Employees</label>
           <li class="sidebar-nav-item">
-            <a href="{{route('admin.employee')}}" class="sidebar-nav-link {{setActive(['admin.employee','admin.employee_form'])}}"><i class="fa fa-users" aria-hidden="true"></i>
+            <a href="{{route('admin.employee')}}" class="sidebar-nav-link "><i class="fa fa-users" aria-hidden="true"></i>
 &nbsp;&nbsp;All Employees</a>
 
         </li>
-
-    </ul>
-    <label class="sidebar-label mt-3">ADD</label>
-    <li class="sidebar-nav-item">
-
-            <a href="{{route('admin.company_form')}}" class="sidebar-nav-link {{setActive(['admin.companies','company_form'])}}"><i class="fa fa-plus" aria-hidden="true"></i>
-
-&nbsp;&nbsp;Add Company</a>
-<a href="{{route('admin.employee_form')}}" class="sidebar-nav-link {{setActive(['admin.employee','admin.employee_form'])}}"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Add Employee</a>
+<li class="sidebar-nav-item">
+<a href="{{route('admin.employee_form')}}" class="sidebar-nav-link "><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Add Employee</a>
 
 
         </li>
+    </ul>
+
 
   </div>
