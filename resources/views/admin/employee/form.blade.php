@@ -4,7 +4,7 @@
 @include('admin.template.breadcrum',['title'=>$pageTitle])
 
     <div class="section-wrapper mg-t-20 mg-b-10">
-        <div class="section-title mg-b-20"><a href="{{route('admin.employee')}}" class="btn btn-outline-primary float-right">Employee List</a>
+        <div class="section-title mg-b-20"><a href="{{route('admin.employee')}}" class="btn btn-outline-primary float-right"><i class="fa fa-list"></i>&nbsp;Employee List</a>
         </div>
     <div class="mg-t-50"></div>
     <hr>
@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="col-md-6">
                       <div class="form-group">
-                        <label class="control-label" for="company_id">Company</label>
+                        <label class="control-label" for="company_id" > <i class="fa fa-building"></i>&nbsp;Company</label>
                         <select name="company_id" id="company_id" class="form-control @error('company_id') is-invalid @enderror">
                             <option value="0">Select </option>
                             @foreach($companies as $coy)
@@ -32,7 +32,7 @@
                 </div>
                      <div class="col-md-6">
                       <div class="form-group">
-                        <label class="control-label" for="company_id">Role</label>
+                        <label class="control-label" for="company_id"><i class="fa fa-user"></i>&nbsp;Role</label>
                         <select name="role_id" id="role_id" class="form-control @error('role_id') is-invalid @enderror">
                             <option value="0">Select </option>
                             @foreach($roles as $role)
@@ -50,28 +50,28 @@
                 </div>
                 <div class="col-md-6">
                      <div class="form-group">
-                        <label for="">Name</label>
+                        <label for=""><i class="fa fa-id-badge"></i>&nbsp;Name</label>
                     <input type="text" name="name" class="form-control" required value="{{$edit?$user->name:old('name')}}">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="">Email</label>
+                        <label for=""><i class="fa fa-envelope"></i>&nbsp;Email</label>
                     <input type="email" name="email" class="form-control" required value="{{$edit?$user->email:old('email')}}">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="">Password</label>
+                        <label for=""><i class="fa fa-key"></i>&nbsp;Password</label>
                     <input type="text" name="password" class="form-control" >
                     </div>
                 </div>
-                 
+
             </div>
             <div class="row">
 
                 <div class="col-md-12 text-center" >
-                    <button class="btn btn-outline-primary" style="width:300px"> {{$edit?'Update Employee':'Add Employee'}}</button>
+                    <button class="btn btn-outline-primary" style="width:300px"> <i class="fa fa-user-plus"></i>&nbsp;{{$edit?'Update Employee':'Add Employee'}}</button>
                 </div>
             </div>
         </form>

@@ -4,7 +4,7 @@
 @include('admin.template.breadcrum',['title'=>$pageTitle])
 
     <div class="section-wrapper mg-t-20 mg-b-10">
-        <div class="section-title mg-b-20"><a href="{{route('admin.companies')}}" class="btn btn-outline-primary float-right">Company List</a>
+        <div class="section-title mg-b-20"><a href="{{route('admin.companies')}}" class="btn btn-outline-primary float-right"><i class="fa fa-list"></i>&nbsp;Company List</a>
         </div>
     <div class="mg-t-50"></div>
     <hr>
@@ -14,32 +14,32 @@
             <div class="row">
                 <div class="col-md-6">
                      <div class="form-group">
-                        <label for="">Company Name</label>
+                        <label for=""><i class="fa fa-id-badge"></i>&nbsp;Company Name</label>
                     <input type="text" name="name" class="form-control" required value="{{$edit?$company->name:old('name')}}">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="">Company email</label>
+                        <label for=""><i class="fa fa-envelope"></i>&nbsp;Company email</label>
                     <input type="email" name="email" class="form-control" required value="{{$edit?$company->email:old('email')}}">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="">Company website</label>
+                        <label for=""><i class="fa fa-window-maximize"></i>&nbsp;Company website</label>
                     <input type="url" name="url" class="form-control" required value="{{$edit?$company->url:old('url')}}">
                     </div>
                 </div>
                  <div class="col-md-6">
                      <div class="row">
                         <div class="col-md-10">
-                            <label class="control-label">Company Logo</label>
-                            <input class="form-control @error('image') is-invalid @enderror" type="file" id="logo" name="image"/>
+                            <label class="control-label"><i class="fa fa-image"></i>&nbsp;Company Logo</label>
+                            <input class="form-control-file @error('image') is-invalid @enderror" type="file" id="logo" name="image"/>
                             @error('image') {{ $message }} @enderror
                         </div>
                         <input type="text" name="formal_img" value="{{$edit?$company->logo:''}}" style="display: none">
                            @if ($edit && $company->logo != null)
-                                    
+
                                     <div class="col-md-2">
                                         <figure class="mt-2" style="width: 80px; height: auto;">
                                             <img src="{{ asset($company->logo) }}" id="brandLogo" class="img-fluid" alt="img">
@@ -48,12 +48,12 @@
                             @endif
                      </div>
                  </div>
-                 
+
             </div>
             <div class="row">
 
                 <div class="col-md-12 text-center" >
-                    <button class="btn btn-outline-primary" style="width:300px"> {{$edit?'Update company':'Add company'}}</button>
+                    <button class="btn btn-outline-primary" style="width:300px"> <i class="fa fa-plus"></i>&nbsp;{{$edit?'Update company':'Add company'}}</button>
                 </div>
             </div>
         </form>

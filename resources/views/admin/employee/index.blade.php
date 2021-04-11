@@ -3,7 +3,7 @@
 @section('content')
 @include('admin.template.breadcrum',['title'=>$pageTitle])
 
-    <div class="section-title mb-b-20"><a href="{{route('admin.employee_form')}}" class="btn btn-outline-primary float-right">Add Employee</a>
+    <div class="section-title mb-b-20"><a href="{{route('admin.employee_form')}}" class="btn btn-outline-primary float-right"><i class="fa fa-plus"></i> &nbsp;Add Employee</a>
 
     </div>
 
@@ -43,10 +43,10 @@
                                 <td>{{$user->role->role??null}} User</td>
 
                                 <td>
-                                    <a href="{{route('admin.employee_form',$user->slug)}}" > <button type="button" class="btn btn-info">Edit</button>
+                                    <a href="{{route('admin.employee_form',$user->slug)}}" > <button type="button" class="btn btn-info"><i class="fa fa-edit"></i> &nbsp;Edit</button>
                                     </a>
                                     &nbsp;
-                                    <a onclick="return confirm('are you sure to delete');"  href="{{route('admin.delete_employee',$user->slug)}}" > <button type="button" class="btn btn-danger">Delete</button></a>
+                                    <a onclick="return confirm('are you sure to delete');"  href="{{route('admin.delete_employee',$user->slug)}}" > <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;Delete</button></a>
                                 </td>
 
                                 </tr>
