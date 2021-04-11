@@ -12,7 +12,7 @@
     <title>@yield('title')</title>
 
     <!-- Scripts -->
-
+   
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">

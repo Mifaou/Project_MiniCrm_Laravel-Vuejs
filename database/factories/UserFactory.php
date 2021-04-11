@@ -34,8 +34,8 @@ class UserFactory extends Factory
             'password' => 'password', // password
             'remember_token' => Str::random(10),
         ];
-
+       
     }
-
+      
     }
 }

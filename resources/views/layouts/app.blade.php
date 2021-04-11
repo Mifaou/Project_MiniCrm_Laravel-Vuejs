@@ -23,8 +23,7 @@
     <link href="{{ asset('css/parsley.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('assets/css/slim.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/mycss.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/backend0ff5.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/backend-plugin.min.css')}}">
+
 
 </head>
 <body>

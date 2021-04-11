@@ -39,7 +39,7 @@
                         </div>
                         <input type="text" name="formal_img" value="{{$edit?$company->logo:''}}" style="display: none">
                            @if ($edit && $company->logo != null)
-
+                                    
                                     <div class="col-md-2">
                                         <figure class="mt-2" style="width: 80px; height: auto;">
                                             <img src="{{ asset($company->logo) }}" id="brandLogo" class="img-fluid" alt="img">
@@ -48,7 +48,7 @@
                             @endif
                      </div>
                  </div>
-
+                 
             </div>
             <div class="row">
 
