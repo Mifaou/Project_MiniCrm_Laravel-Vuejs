@@ -23,10 +23,7 @@ class AdminController extends BaseController
     public $property;
     public function __construct()
     {
-        // $this->middleware('auth:admin');
-            // $this->profile = $user;
-            // $this->pro_request = $req;
-            // $this->property=$property;
+
     }
     public function dashboard(){
         $this->setPageTitle('Dashboard', 'Analytic');
@@ -35,5 +32,5 @@ class AdminController extends BaseController
         $data="welcome";
         return view('admin.dashboard',compact('total_companies','total_users'));
     }
-    
+
 }
